@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from 'openai';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 
 const configuration = new Configuration({
